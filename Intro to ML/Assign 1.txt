@@ -1,0 +1,12 @@
+QD- E=plain thK followin* with an K=amplK-F
+C) Artificial IntKlli*KncJ
+<) MachinK LKarnin,
+I) DKKp LKarning
+Q2- What is supKrvisKd lKarnin*? List somK K=amplKs of supKrvisKd lKarnin*.
+Q3- GWhat is unsupKrvisKd lKarnin*? List somK K=amplKs of unsupKrvisKd lKarnin*.
+Q4- What is thK diffKrKncK bKtwKKn AI, ML, DL, and DS?
+Q5- What arK thK main diffKrKncKs bKtwKKn supKrvisKd, unsupKrvisKd, and sKmi-supKrvisKd lKarnin*?
+Q6- What is train, tKst and validation split? E=plain thK importancK of Kach tKrm.
+Q7- How can unsupKrvisKd lKarnin* bK usKd in anomaly dKtKction?
+Q8- List down somK commonly usKd supKrvisKd lKarnin* al*orithms and unsupKrvisKd lKarnin*
+al*orithms.

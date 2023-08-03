@@ -1,0 +1,5 @@
+Q1. What is Web Scraping? Why is it Used? Give three areas where Web Scraping is used to get data.
+Q2. What are the different methods used for Web Scraping?
+Q3. What is Beautiful Soup? Why is it used?
+Q4. Why is flask used in this Web Scraping project?
+Q5. Write the names of AWS services used in this project. Also, explain the use of each service.

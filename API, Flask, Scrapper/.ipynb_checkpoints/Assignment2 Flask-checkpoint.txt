@@ -1,0 +1,5 @@
+Q1. Explain GET and POST methods.
+Q2. Why is request used in Flask?
+Q3. Why is redirect() used in Flask?
+Q4. What are templates in Flask? Why is the render_template() function used?
+Q5. Create a simple API. Use Postman to test it. Attach the screenshot of the output in the Jupyter Notebook.

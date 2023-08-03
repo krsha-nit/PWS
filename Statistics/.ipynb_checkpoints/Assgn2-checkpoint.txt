@@ -1,0 +1,79 @@
+Q1. What are the three measures of central tendency?
+-Mean, median, mode
+Q2. What is the difference between the mean, median, and mode? How are they used to measure the
+central tendency of a dataset?
+mean-avg,
+median-middle value if odd # of data, else avg of 2 middle values for even # of data, prone to outliers
+mean and median are used to fill missing numerical data
+mode-most frequest occuring data
+mode is used to fill missing categorical data
+
+Q3. Measure the three measures of central tendency for the given height data:
+[178,177,176,177,178.2,178,175,179,180,175,178.9,176.2,177,172.5,178,176.5]
+(177.01875, 177.0, ModeResult(mode=array([177.]), count=array([3])))
+
+Q4. Find the standard deviation for the given data:
+[178,177,176,177,178.2,178,175,179,180,175,178.9,176.2,177,172.5,178,176.5]
+1.7885814036548633
+
+Q5. How are measures of dispersion such as range, variance, and standard deviation used to describe
+the spread of a dataset? Provide an example.
+refer: 'https://statisticsbyjim.com/basics/variability-range-interquartile-variance-standard-deviation/#:~:text=You%20can%20use%20it%20to,standard%20deviation%20from%20the%20mean.'
+'https://statisticsbyjim.com/basics/mean-absolute-deviation/'
+Cofficient of variation = 'https://statisticsbyjim.com/basics/coefficient-variation/' ??
+
+range -  The range of a dataset is the difference between the largest and smallest values in that dataset.
+While the range is easy to understand, it is based on only the two most extreme values in the dataset, which makes it very susceptible to outliers. If one of those numbers is unusually high or low, it affects the entire range even if it is atypical.
+Additionally, the size of the dataset affects the range. In general, you are less likely to observe extreme values. However, as you increase the sample size, you have more opportunities to obtain these extreme values. Consequently, when you draw random samples from the same population, the range tends to increase as the sample size increases. Consequently, use the range to compare variability only when the sample sizes are similar.
+The interquartile range is a robust measure of variability in a similar manner that the median is a robust measure of central tendency. Neither measure is influenced dramatically by outliers because they don’t depend on every value. Additionally, the interquartile range is excellent for skewed distributions, just like the median. As you’ll learn, when you have a normal distribution, the standard deviation tells you the percentage of observations that fall specific distances from the mean. However, this doesn’t work for skewed distributions, and the IQR is a great alternative.
+
+variance - 
+Variance is the average squared difference of the values from the mean. Unlike the previous measures of variability, the variance includes all values in the calculation by comparing each value to the mean.
+Because the calculations use the squared differences, the variance is in squared units rather the original units of the data. While higher values of the variance indicate greater variability, there is no intuitive interpretation for specific values. Despite this limitation, various statistical tests use the variance in their calculations.
+
+standard deviation - 
+The standard deviation is the standard or typical difference between each data point and the mean. When the values in a dataset are grouped closer together, you have a smaller standard deviation. On the other hand, when the values are spread out more, the standard deviation is larger because the standard distance is greater.
+Conveniently, the standard deviation uses the original units of the data, which makes interpretation easier. Consequently, the standard deviation is the most widely used measure of variability.
+The standard deviation is just the square root of the variance. Recall that the variance is in squared units. Hence, the square root returns the value to the natural units.
+
+Q6. What is a Venn diagram?
+Pictorial representation of sets?
+
+Q7. For the two given sets A = (2,3,4,5,6,7) & B = (0,2,6,8,10). Find:
+(i) A ⋂ B
+A.intersection(B):{2, 6}
+(ii) A ⋃ B
+A.union(B): {0, 2, 3, 4, 5, 6, 7, 8, 10}
+
+Q8. What do you understand about skewness in data?
+refer - 'https://en.wikipedia.org/wiki/Skewness'
+Skewness is a measurement of the distortion of symmetrical distribution or asymmetry in a data set. Skewness is demonstrated on a bell curve when data points are not distributed symmetrically to the left and right sides of the median on a bell curve.
+
+Q9. If a data is right skewed then what will be the position of median with respect to mean?
+mean<median<mode
+
+Q10. Explain the difference between covariance and correlation. How are these measures used in
+statistical analysis?
+refer: cov - 'https://en.wikipedia.org/wiki/Covariance'
+corr - 'https://en.wikipedia.org/wiki/Correlation'
+cov(X,Y) = sum((X-Xbar)*(Y-Ybar))/N:population OR sum((X-Xbar)*(Y-Ybar))/n-1:sample
+Correlation:
+Pearson: cov(X,Y)/(std(X)*std(Y))
+Spearman rank: cov(rX,rY)/(std(rX)*std(rY))
+
+Q11. What is the formula for calculating the sample mean? Provide an example calculation for a
+dataset.
+randomly select sample# of homogenous data points from population 
+sum(data in sample set)/n
+
+Q12. For a normal distribution data what is the relationship between its measure of central tendency?
+mean=median=mode
+
+Q13. How is covariance different from correlation?
+cov don't have any limit on upper and lower bound
+corr [-1,1]: with extreme values showing max corr and 0 for no corr
+
+Q14. How do outliers affect measures of central tendency and dispersion? Provide an example.
+mean is impacted very much with outliers, median is robust to outliers
+refer - 'https://en.wikipedia.org/wiki/Median_absolute_deviation#:~:text=In%20statistics%2C%20the%20median%20absolute,MAD%20calculated%20from%20a%20sample.'
+std dev and variance also is impacted with outliers, not mean absolute deviation or median absolute deviation

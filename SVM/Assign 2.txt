@@ -1,0 +1,22 @@
+Q1. What is the relationship between polynomial functions and kernel functions in machine learning
+algorithms?
+Q2. How can we implement an SVM with a polynomial kernel in Python using Scikit-learn?
+Q3. How does increasing the value of epsilon affect the number of support vectors in SVR?
+Q4. How does the choice of kernel function, C parameter, epsilon parameter, and gamma parameter
+affect the performance of Support Vector Regression (SVR)? Can you explain how each parameter works
+and provide examples of when you might want to increase or decrease its value?
+Q5. Assignment:
+L Import the necessary libraries and load the dataseg
+L Split the dataset into training and testing setZ
+L Preprocess the data using any technique of your choice (e.g. scaling, normaliMationK
+L Create an instance of the SVC classifier and train it on the training datW
+L hse the trained classifier to predict the labels of the testing datW
+L Evaluate the performance of the classifier using any metric of your choice (e.g. accuracy,
+precision, recall, F1-scoreK
+L Tune the hyperparameters of the SVC classifier using GridSearchCV or RandomiMedSearchCV to
+improve its performanc_
+L Train the tuned classifier on the entire dataseg
+L Save the trained classifier to a file for future use.
+
+You can use any dataset of your choice for this assignment, but make sure it is suitable for
+classification and has a sufficient number of features and samples.

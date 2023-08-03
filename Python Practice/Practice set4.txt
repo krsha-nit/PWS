@@ -1,0 +1,31 @@
+Q1. Create a class called "Person" with properties for "name", "age", and "gender". Create an object of this
+class and print out its properties.
+Q2. Write a Python class called "Rectangle" with attributes for "width" and "height". Implement methods
+to calculate the area and perimeter of the rectangle. Create an instance of this class and use it to print out
+the rectangle's area and perimeter.
+Q3. Write a Python class called "BankAccount" with attributes for "balance" and "interest_rate".
+Implement methods to deposit and withdraw money from the account, as well as to calculate the interest
+earned on the balance based on the interest rate. Create an instance of this class and use it to test out the implemented methods for deposit, withdrawal, and interest calculation.
+Q4. Write a Python class called "Animal" with attributes for "name" and "species". Create a subclass of
+"Animal" called "Dog" with additional attributes for "breed" and "owner". Implement both classes with
+appropriate methods and constructors to initialise their properties. Create instances of both classes and
+use them to print out the various properties of the animals and dogs, such as their names, species,
+breeds, and owners.
+Q5. Create a class called "Car" with properties for "make", "model", and "year". Create a subclass of "Car"
+called "ElectricCar" with additional properties for "battery_size" and "range". Create objects of both
+classes and print out their properties.
+Q6. Create a class called "Student" with properties for "name" and "id". Create a subclass of "Student"
+called "GraduateStudent" with additional properties for "advisor" and "research_area". Create objects of
+both classes and print out their properties.
+Q7. Create a class called "Shape" with methods to calculate the area and perimeter of the shape. Create
+subclasses of "Shape" for "Rectangle", "Circle", and "Triangle" with their own methods for calculating area
+and perimeter. Create objects of each class and print out their area and perimeter.
+Q8. Create a class called "Employee" with properties for "name", "id", and "salary". Add methods to give
+the employee a raise and to calculate their annual salary. Create objects of this class and test out the
+methods.
+Q9. Create a class called "Book" with properties for "title", "author", and "publisher". Create a subclass of
+"Book" called "Ebook" with additional properties for "file_format" and "file_size". Create objects of both
+classes and print out their properties.
+Q10. Create a class called "Bank" with properties for "name" and "accounts". Add methods to create new
+accounts, deposit and withdraw money from accounts, and to calculate the total balance of all accounts.
+Create an object of this class and test out the methods.

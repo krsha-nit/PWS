@@ -1,0 +1,44 @@
+Q1. Which keyword is used to create a function?  - def function_name(arg,*args,**kwargs):
+Create a function to return a list of odd numbers in the
+range of 1 to 25.
+def odd_numbers(list_):
+    a = []
+    for i in list_:
+        if i%2 != 0:
+            a.append(i)
+    
+    return a
+
+Q2. Why *args and **kwargs is used in some functions? Create a function each for *args and **kwargs to
+demonstrate their use.
+*args - dynamically pass unknown number of arguments
+**kwargs - dynamically pass unknown key, value pairs
+
+Q3. What is an iterator in python? 
+-https://www.geeksforgeeks.org/iterators-in-python/
+
+Name the method used to initialise the iterator object and the method
+used for iteration. 
+-yield?
+
+Use these methods to print the first five elements of the given list [2, 4, 6, 8, 10, 12, 14, 16,
+18, 20].
+
+
+Q4. What is a generator function in python? Why yield keyword is used? Give an example of a generator
+function.
+range(n)
+Q5. Create a generator function for prime numbers less than 1000. Use the next() method to print the first 20 prime numbers.
+def prime_num2(n):
+    cnt = 0
+    #prime = []
+    for i in range(1,n+1):
+        for j in range(1,i+1):
+            if i%j ==0:
+                cnt+=1
+        if cnt==2:
+            #prime.append(i)
+            yield i
+        cnt=0
+    
+    #return prime

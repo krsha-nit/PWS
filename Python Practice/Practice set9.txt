@@ -1,0 +1,10 @@
+1. Write a Python program that prompts the user for two integers and divides the first integer by the second integer. If the either variable are none integer then print the value error and second integer is zero, catch the ZeroDivisionError and print an error message to the user.
+2.Write a Python program that prompts the user for a password and checks whether the password meets certain criteria (e.g., at least 8 characters, contains at least one uppercase letter, etc.). If the password does not meet the criteria, raise a custom exception called PasswordError with a custom error message.
+3.Write a Python program that prompts the user for a number and calculates the square root of the number using the math.sqrt() function. If the number is negative, raise a ValueError with a custom error message.
+4.Write a Python program that prompts the user for a number and calculates the square root of the number using the math.sqrt() function. If the number is negative, raise a ValueError with a custom error message.
+5.Write a Python program that prompts the user for a list of integers and calculates the average of the list. If the list is empty, raise a ValueError with a custom error message.
+6.Write a function that takes a string as input and returns the number of vowels in the string. If the input is not a string, raise a TypeError with a custom error message.
+7.write a python program how to handle simple runtime error?
+8.write a program how to handle multiple errors with one answer:# Program to handle multiple errors with one
+9. write a program to print the reciprocal of even numbers note:we might want to run a certain block of code if the code block inside try runs without any errors. For these cases, you can use the optional else keyword with the try statement.
+10.How to handle exceptions using the try, except, and finally statements write code

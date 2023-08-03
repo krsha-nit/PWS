@@ -1,0 +1,33 @@
+Que 1: Name any five plots that we can plot using the Seaborn library. Also, state the uses of each plot.
+import seaborn as sns
+sns.displot('single var') : distribution of var #diff b/w sns.displot() and sns.histplot()
+sns.scatterplot(x=,y=,data=,hue=,style=) : scatterplot b/w x and y to show change in y with x
+sns.barplot(x=cat,y=num,data=,hue=) : bar plot for cat v/s num
+sns.pairplot(data) : all possible comb of scatter plots, distplot where it's same
+sns.catplot(x=cat,y=num,data=) : scatterplot for cat
+sns.barplot()
+sns.boxplot()
+
+Que 2: Load the "fmri" dataset using the load_dataset function of seaborn. Plot a line plot using x =
+"timepoint" and y = "signal" for different events and regions.
+sns.lineplot(x ="timepoint", y = "signal", data = fmri,hue='region',style = 'event')
+
+
+Note: timepoint, signal, event, and region are columns in the fmri dataset.
+Que 3: Load the "titanic" dataset using the load_dataset function of seaborn. Plot two box plots using x =
+'pclass', y = 'age' and y = 'fare'.
+sns.boxplot(x ='pclass', y = 'age',data = titanic)#hue='survived'
+sns.boxplot(x ='pclass', y = 'fare',data = titanic)
+
+
+Note: pclass, age, and fare are columns in the titanic dataset.
+Que 4: Use the "diamonds" dataset from seaborn to plot a histogram for the 'price' column. Use the hue
+parameter for the 'cut' column of the diamonds dataset.
+sns.histplot(x=diamonds.price,hue=diamonds.cut)??
+
+Que 5: Use the "iris" dataset from seaborn to plot a pair plot. Use the hue parameter for the "species" column
+of the iris dataset.
+sns.pairplot(iris,hue='species')
+
+Que 6: Use the "flights" dataset from seaborn to plot a heatmap.
+sns.heatmap(flights.pivot(index='year',columns='month',values='passengers'),cmap='coolwarm')

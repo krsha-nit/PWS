@@ -1,0 +1,122 @@
+Consider following code to answer further questions:
+import pandas as pd
+course_name = [‘Data Science’, ‘Machine Learning’, ‘Big Data’, ‘Data Engineer’]
+duration = [2,3,6,4]
+df = pd.DataFrame(data = {‘course_name’ : course_name, ‘duration’ : duration})
+Q1. Write a code to print the data present in the second row of the dataframe, df.
+df7[1:2]
+df7.iloc[1:2]
+df7.iloc[[1]]
+
+Q2. What is the difference between the functions loc and iloc in pandas.DataFrame?
+loc - if named index, have to pass index name, iloc - even for named index, work like default index starts 0 to n
+
+Q3. Reindex the given dataframe using a variable, reindex = [3,0,1,2] and store it in the variable, new_df 
+then find the output for both new_df.loc[2] and new_df.iloc[2].
+new_df.loc[2] = same
+new_df.iloc[2] = new_df.loc[1]
+
+Did you observe any difference in both the outputs? If so then explain it.
+yes, 
+new_df.loc[2] = same
+new_df.iloc[2] = new_df.loc[1]
+
+Consider the below code to answer further questions:
+import pandas as pd
+import numpy as np
+columns = ['column_1', 'column_2', 'column_3', 'column_4', 'column_5', 'column_6']
+indices = [1,2,3,4,5,6]
+#Creating a dataframe:
+df1 = pd.DataFrame(np.random.rand(6,6), columns = columns, index = indices)
+
+Q4. Write a code to find the following statistical measurements for the above dataframe df1:
+(i) mean of each and every column present in the dataframe.
+df1.mean() # df.describe()
+
+(ii) standard deviation of column, ‘column_2’
+df1.std(), df1['column_2'].std()
+
+Q5. Replace the data present in the second row of column, ‘column_2’ by a string variable then find the
+mean of column, column_2.
+[Hint: To replace the data use df1.loc[] and equate this to string data of your choice.]
+If you are getting errors in executing it then explain why.
+
+df1.loc[2,'column_2'] = 'str'
+column - will provide mean of all columns but, column_2
+column_2 will give error as can't compute mean with num and str values
+
+
+Q6. What do you understand about the windows function in pandas and list the types of windows
+functions?
+
+
+Q7. Write a code to print only the current month and year at the time of answering this question.
+[Hint: Use pandas.datetime function]
+
+from datetime import date
+today = date.today()
+current_date = today.day
+current_month = today.month
+current_year = today.year
+current_date, current_month, current_year
+
+Q8. Write a Python program that takes in two dates as input (in the format YYYY-MM-DD) and
+calculates the difference between them in days, hours, and minutes using Pandas time delta. The
+program should prompt the user to enter the dates and display the result.
+--Attempt again..
+import pandas as pd
+#dt2 = pd.date_range(start='2023-03-02',end='2023-03-03')
+start = pd.to_datetime(input('Enter Start Date: '))
+end = pd.to_datetime(input('Enter end Date: '))
+diff = pd.Timedelta(end - start,'h')
+print('Date diff is {}'.format(diff))
+
+
+Q9. Write a Python program that reads a CSV file containing categorical data and converts a specified
+column to a categorical data type. The program should prompt the user to enter the file path, column
+name, and category order, and then display the sorted data.
+??
+
+Q10. Write a Python program that reads a CSV file containing sales data for different products and
+visualizes the data using a stacked bar chart to show the sales of each product category over time. The
+program should prompt the user to enter the file path and display the chart.
+
+
+Q11. You are given a CSV file containing student data that includes the student ID and their test score. Write
+a Python program that reads the CSV file, calculates the mean, median, and mode of the test scores, and
+displays the results in a table.
+The program should do the followingM
+I Prompt the user to enter the file path of the CSV file containing the student dataR
+I Read the CSV file into a Pandas DataFrameR
+I Calculate the mean, median, and mode of the test scores using Pandas toolsR
+I Display the mean, median, and mode in a table.
+Assume the CSV file contains the following columnsM
+I Student ID: The ID of the studentR
+I Test Score: The score of the student's test.
+Example usage of the program:
+Enter the file path of the CSV file containing the student data: student_data.csv
++-----------+--------+
+| Statistic | Value |
++-----------+--------+
+| Mean | 79.6 |
+| Median | 82 |
+| Mode | 85, 90 |
++-----------+--------+
+Assume that the CSV file student_data.csv contains the following data:
+Student ID,Test Score
+1,85
+2,90
+3,80
+4,75
+5,85
+6,82
+7,78
+8,85
+9,90
+10,85
+The program should calculate the mean, median, and mode of the test scores and display the results
+in a table.
+
+
+Note: Create your assignment in Jupyter notebook and upload it in GitHub & share that github
+repository link through your dashboard. Make sure the repository is public.

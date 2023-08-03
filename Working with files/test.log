@@ -1,0 +1,8 @@
+ERROR:Comm:No such comm target registered: jupyter.widget.control
+WARNING:Comm:No such comm: ba37a197-3ed4-49a3-a143-d758a90fa28c
+ERROR:root:this is my error
+CRITICAL:root:this is critical
+WARNING:root:this is warning
+ERROR:root:this is my error
+CRITICAL:root:this is critical
+WARNING:root:this is warning

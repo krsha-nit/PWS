@@ -1,0 +1,154 @@
+1.Create a Flask application that displays "Hello, World!" on the homepage.
+from flask import Flask
+app = Flask(_name_)
+@app.route("/")
+def hello():
+    return "Hello, World!"
+if _name_ == "_main_":
+    app.run()
+2. Write a Flask route that takes a name parameter and returns "Hello, [name]!" as plain text.
+from flask import Flask
+app = Flask(__name__)
+@app.route("/hello/<name>")
+def hello(name):
+    return f"Hello, {name}!"
+if __name__ == "__main__":
+    app.run()
+3.  Write a Flask route that takes a number parameter and returns the square of that number as plain text.
+from flask import Flask
+app = Flask(__name__)
+@app.route("/square/<int:num>")
+def square(num):
+    return str(num**2)
+if __name__ == "__main__":
+    app.run()
+4.  Write a Flask route that displays a simple HTML form that asks for a name and returns "Hello, [name]!" when submitted.
+from flask import Flask, request, render_template
+app = Flask(__name__)
+@app.route("/", methods=["GET", "POST"])
+def hello():
+    if request.method == "POST":
+        name = request.form["name"]
+        return f"Hello, {name}!"
+    else:
+        return render_template("index.html")
+if __name__ == "__main__":
+    app.run()
+The corresponding index.html file should contain the following:
+<!doctype html>
+<html>
+  <body>
+    <form method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+5.  Write a Flask route that displays a list of names in an HTML unordered list.
+from flask import Flask, render_template
+app = Flask(__name__)
+@app.route("/names")
+def names():
+    names = [("Alice", 25), ("Bob", 30), ("Charlie", 35)]
+    return render_template("names.html", names=names)
+if __name__ == "__main__":
+    app.run()
+The corresponding names.html file should contain the following:
+<!doctype html>
+<html>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for name in names %}
+          <tr>
+            <td>{{ name[0] }}</td>
+            <td>{{ name[1] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
+6.  Write a Flask route that displays a list of names in a table.
+from flask import Flask, render_template
+app = Flask(__name__)
+@app.route("/names")
+def names():
+    names = ["Alice", "Bob", "Charlie"]
+    return render_template("names.html", names=names)
+if __name__ == "__main__":
+    app.run()
+The corresponding names.html file should contain the following:
+<!doctype html>
+<html>
+  <body>
+    <form method="POST">
+      <label for="name">Name:</label>
+      <select id="name" name="name">
+        {% for name in names %}
+          <option value="{{ name }}">{{ name }}</option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+7.  Write a Flask route that displays a list of names in a dropdown menu.
+from flask import Flask, render_template
+app = Flask(__name__)
+@app.route("/names")
+def names():
+    names = ["Alice", "Bob", "Charlie"]
+    return render_template("names.html", names=names)
+if __name__ == "__main__":
+    app.run()
+The corresponding names.html file should contain the following:
+<!doctype html>
+<html>
+  <body>
+    <form method="POST">
+      <label for="name">Name:</label>
+      <select id="name" name="name">
+        {% for name in names %}
+          <option value="{{ name }}">{{ name }}</option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+8.  Write a Flask route that receives data through a POST request and returns the data in JSON format.
+from flask import Flask, request, jsonify
+app = Flask(__name__)
+@app.route("/data", methods=["POST"])
+def data():
+    data = request.get_json()
+    return jsonify(data)
+if __name__ == "__main__":
+    app.run()
+9.  Write a Flask route that receives data through a POST request and returns the data in JSON format.
+from flask import Flask, send_from_directory
+app = Flask(__name__)
+@app.route("/static/<path:filename>")
+def static_file(filename):
+    return send_from_directory("static", filename)
+if __name__ == "__main__":
+    app.run()
+10.  Write a Flask route that redirects the user to a different URL.
+from flask import Flask, redirect
+app = Flask(__name__)
+@app.route("/")
+def index():
+    return redirect("/hello")
+@app.route("/hello")
+def hello():
+    return "Hello, World!"
+if __name__ == "__main__":
+    app.run()

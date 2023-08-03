@@ -1,0 +1,17 @@
+Q1. What is the mathematical formula for a linear SVM?
+Q2. What is the objective function of a linear SVM?
+Q3. What is the kernel trick in SVM?
+Q4. What is the role of support vectors in SVM Explain with example
+Q5. Illustrate with examples and graphs of Hyperplane, Marginal plane, Soft margin and Hard margin in
+SVM?
+Q6. SVM Implementation through Iris dataset.
+~ Load the iris dataset from the scikit-learn library and split it into a training set and a testing setl
+~ Train a linear SVM classifier on the training set and predict the labels for the testing setl
+~ Compute the accuracy of the model on the testing setl
+~ Plot the decision boundaries of the trained model using two of the featuresl
+~ Try different values of the regularisation parameter C and see how it affects the performance of
+the model.
+
+Bonus task: Implement a linear SVM classifier from scratch using Python and compare its
+performance with the scikit-learn implementation.
+

@@ -1,0 +1,12 @@
+Q1: Define overfitting and underfitting in machine learning. What are the consequences of each, and how
+can they be mitigated?
+Q2: How can we reduce overfitting? Explain in brief.
+Q3: Explain underfitting. List scenarios where underfitting can occur in ML.
+Q4: Explain the bias-variance tradeoff in machine learning. What is the relationship between bias and
+variance, and how do they affect model performance?
+Q5: Discuss some common methods for detecting overfitting and underfitting in machine learning models.
+How can you determine whether your model is overfitting or underfitting?
+Q6: Compare and contrast bias and variance in machine learning. What are some examples of high bias
+and high variance models, and how do they differ in terms of their performance?
+Q7: What is regularization in machine learning, and how can it be used to prevent overfitting? Describe
+some common regularization techniques and how they work.

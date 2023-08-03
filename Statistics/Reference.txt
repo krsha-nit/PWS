@@ -1,0 +1,38 @@
+PDF,PMF,CDF:
+https://stats.libretexts.org/Courses/Saint_Mary's_College_Notre_Dame/MATH_345__-_Probability_(Kuter)/4%3A_Continuous_Random_Variables/4.1%3A_Probability_Density_Functions_(PDFs)_and_Cumulative_Distribution_Functions_(CDFs)_for_Continuous_Random_Variables
+Q-Q plot:
+https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot
+Central limit theorem:
+https://en.wikipedia.org/wiki/Central_limit_theorem
+Estimate and CI:
+https://sixsigmastudyguide.com/point-and-interval-estimation/
+Hypothesis testing:
+https://en.wikipedia.org/wiki/Statistical_hypothesis_testing
+https://en.wikipedia.org/wiki/P-value
+https://en.wikipedia.org/wiki/Z-test
+https://en.wikipedia.org/wiki/Student%27s_t-test
+https://en.wikipedia.org/wiki/Student%27s_t-distribution
+https://en.wikipedia.org/wiki/Chi-squared_test
+https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/anova/
+Type 1 and Type II error:
+https://en.wikipedia.org/wiki/Type_I_and_type_II_errors
+Confidence error and Margin of error
+https://www.nngroup.com/articles/confidence-interval/
+https://en.wikipedia.org/wiki/Margin_of_error
+Bayes Theorem:
+https://en.wikipedia.org/wiki/Probability
+https://en.wikipedia.org/wiki/Bayes%27_theorem
+
+
+
+Distibutions:
+https://en.wikipedia.org/wiki/Bernoulli_distribution
+https://en.wikipedia.org/wiki/Binomial_distribution
+https://en.wikipedia.org/wiki/Poisson_distribution
+https://en.wikipedia.org/wiki/Normal_distribution ;  https://sixsigmastudyguide.com/z-scores-z-table-z-transformations/#:~:text=In%20the%20Z%2Dtable%20top,%3C%2D1.53)%20%3D%200.0630.&text=For%20example%2C%20a%20Z%2Dscore%20of%200.83%20has%20an%20area,to%20the%20left%20of%20it.
+https://en.wikipedia.org/wiki/Continuous_uniform_distribution
+https://en.wikipedia.org/wiki/Discrete_uniform_distribution
+https://en.wikipedia.org/wiki/F-distribution
+
+
+

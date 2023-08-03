@@ -1,0 +1,23 @@
+Q1. In order to predict house price based on several characteristics, such as location, square footage,
+number of bedrooms, etc., you are developing an SVM regression model. Which regression metric in this
+situation would be the best to employ?
+Dataset link: https://drive.google.com/file/d/1Z9oLpmt6IDRNw7IeNcHYTGeJRYypRSC0/view?usp=share_link
+
+Q2. You have built an SVM regression model and are trying to decide between using MSE or R-squared as
+your evaluation metric. Which metric would be more appropriate if your goal is to predict the actual price
+of a house as accurately as possible?
+Q3. You have a dataset with a significant number of outliers and are trying to select an appropriate
+regression metric to use with your SVM model. Which metric would be the most appropriate in this
+scenario?
+Q4. You have built an SVM regression model using a polynomial kernel and are trying to select the best
+metric to evaluate its performance. You have calculated both MSE and RMSE and found that both values
+are very close. Which metric should you choose to use in this case?
+Q5. You are comparing the performance of different SVM regression models using different kernels (linear,
+polynomial, and RBF) and are trying to select the best evaluation metric. Which metric would be most
+appropriate if your goal is to measure how well the model explains the variance in the target variable?
+https://drive.google.com/file/d/1Z9oLpmt6IDRNw7IeNcHYTGeJRYypRSC0/view?
+
+usp=share_link
+
+Note: Create your assignment in Jupyter notebook and upload it to GitHub & share that github repository
+link through your dashboard. Make sure the repository is public.

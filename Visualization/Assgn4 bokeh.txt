@@ -1,0 +1,6 @@
+Q1. How can you create a Bokeh plot using Python code?
+Q2. What are glyphs in Bokeh, and how can you add them to a Bokeh plot? Explain with an example.
+Q3. How can you customize the appearance of a Bokeh plot, including the axes, title, and legend?
+Q4. What is a Bokeh server, and how can you use it to create interactive plots that can be updated in
+real time?
+Q5. How can you embed a Bokeh plot into a web page or dashboard using Flask or Django?

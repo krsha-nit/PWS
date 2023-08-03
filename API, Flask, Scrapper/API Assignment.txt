@@ -1,0 +1,5 @@
+Q1. What is an API? Give an example, where an API is used in real life.
+Q2. Give advantages and disadvantages of using API.
+Q3. What is a Web API? Differentiate between API and Web API.
+Q4. Explain REST and SOAP Architecture. Mention shortcomings of SOAP.
+Q5. Differentiate between REST and SOAP.
